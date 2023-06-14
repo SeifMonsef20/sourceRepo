@@ -18,8 +18,9 @@ jobs:
         env:
           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
         with:
-          source-directory: '.'
+          source-directory: 'output'
           destination-github-username: 'SeifMonsef20'
           destination-repository-name: 'deployedRepo'
+          destination-directory: 'output'
           user-email: seif.monsef@gmail.com
           target-branch: main
